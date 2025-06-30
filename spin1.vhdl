@@ -3,7 +3,7 @@ architecture spin1 of leds is
   signal clk_4hz: std_logic;
   signal leds : std_ulogic_vector (1 to 5);
 begin
-  (LED1, LED2, LED3, LED4, LED5) <= leds;
+  (LED4, LED3, LED5, LED2, LED1) <= leds;
 
   process (CLK)
     variable cnt : unsigned (1 downto 0) := "00";
