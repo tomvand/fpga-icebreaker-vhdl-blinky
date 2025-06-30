@@ -1,3 +1,6 @@
+# Stop on error
+set -e
+
 # Analyse VHDL sources
 ghdl -a leds.vhdl
 ghdl -a spin1.vhdl
